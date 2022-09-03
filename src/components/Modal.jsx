@@ -18,7 +18,7 @@ const Modal = ({ setModal, guardarGasto, gastoEditar, setGastoEditar }) => {
 			setId(gastoEditar.id);
 			setFecha(gastoEditar.fecha);
 		}
-	});
+	}, []);
 
 	const cerrarModal = () => {
 		setModal(false);
